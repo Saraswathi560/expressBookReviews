@@ -1,7 +1,7 @@
 const express = require('express');
 let books = require("./router/books.js");
-let isValid = require("./router/auth_user.js").isValid;
-let users = require("./router/auth_user.js").users;
+let isValid = require("./router/auth_users.js").isValid;
+let users = require("./router/auth_users.js").users;
 const public_users = express.Router();
 
 public_users.post("/register", (req,res) => {
